@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .mood-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .mood-btn {
+    font-size: 2em;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mood-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .suggestions {
+    margin-bottom: 20px;
+  }
+  
+  .suggestions h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .suggestions p {
+    font-size: 1.2em;
+    color: #7f8c8d;
+  }
+  
+  .history {
+    margin-top: 30px;
+  }
+  
+  .history h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .history ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .history li {
+    font-size: 1.2em;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
