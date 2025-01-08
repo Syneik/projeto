@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+  color: #2c3e50;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #3498db;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 25px;
+  color: #34495e;
+}
+
+.mood-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+.mood-btn {
+  font-size: 2.5em;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mood-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+.suggestions {
+  margin-bottom: 25px;
+}
+
+.suggestions h2 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+.suggestions p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+}
+
+.history {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.history h2 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  color: #3498db;
+}
+
+.history ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history li {
+  font-size: 1.1em;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  color: #34495e;
+}
+
+@media (max-width: 768px) {
+  body {
+      padding: 10px;
+  }
+
+  .container {
+      padding: 20px;
+      width: 100%;
+      max-width: 500px;
+  }
+
+  .mood-buttons {
+      flex-wrap: wrap;
+  }
+
+  .mood-btn {
+      margin: 10px;
+      font-size: 2em;
+      padding: 12px;
+      width: 50px;
+      height: 50px;
+  }
+
+  .suggestions h2, .history h2 {
+      font-size: 1.4em;
+  }
+
+  .history li {
+      font-size: 1em;
+      padding: 8px 0;
+  }
+}
