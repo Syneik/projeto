@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Mood Diary</title>
-  <link rel="stylesheet" href="styles2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Personalizável</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Interactive Mood Diary</h1>
-    <p>How are you feeling today?</p>
-    
-    <div class="mood-buttons">
-      <button class="mood-btn" data-mood="happy">😊</button>
-      <button class="mood-btn" data-mood="sad">😢</button>
-      <button class="mood-btn" data-mood="excited">🤩</button>
-      <button class="mood-btn" data-mood="tired">😴</button>
+    </button>
+    <div class="calculator">
+        <input type="text" class="screen" id="screen" disabled>
+        <div class="buttons">
+            <button class="clear">C</button>
+            <button class="backspace">⌫</button>
+            <button class="operator">+</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator">-</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operator">*</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operator">%</button>
+            <button class="zero">0</button>
+            <button>.</button>
+            <button class="equal">=</button>
+        </div>
     </div>
-
-    <div class="suggestions">
-      <h2>Activity Suggestions</h2>
-      <p id="suggestion">Select a mood for personalized suggestions!</p>
-    </div>
-
-    <div class="history">
-      <h2>Mood History</h2>
-      <ul id="history-list">
-        
-      </ul>
-    </div>
-  </div>
-
-  <script src="script2.js"></script>
+    <script src="calculadora.js"></script>
 </body>
 </html>

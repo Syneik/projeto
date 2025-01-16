@@ -1,0 +1,126 @@
+:root {
+    --transition-speed: 0.5s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #444;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background var(--transition-speed);
+}
+
+.theme-toggle img {
+    width: 30px;
+    height: 30px;
+    transition: transform var(--transition-speed);
+}
+
+.calculator {
+    width: 320px;
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background var(--transition-speed);
+}
+
+.calculator .screen {
+    width: 95%;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background: #555;
+    color: #fff;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background var(--transition-speed), color var(--transition-speed);
+}
+
+.calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calculator .buttons button {
+    font-size: 1.2rem;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator .buttons button:hover {
+    background: #45a049;
+}
+
+.calculator .buttons .operator {
+    background: #f39c12;
+}
+
+.calculator .buttons .operator:hover {
+    background: #e67e22;
+}
+
+.calculator .buttons .zero {
+    grid-column: span 2;
+}
+
+.calculator .buttons .equal {
+    background: #2ecc71;
+    
+}
+
+.calculator .buttons .equal:hover {
+    background: #27ae60;
+}
+
+.calculator .buttons .clear {
+    background: #e74c3c;
+    grid-column: span 2;
+}
+
+.calculator .buttons .clear:hover {
+    background: #c0392b;
+}
+
+.light-theme {
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+.light-theme .calculator {
+    background: #fff;
+}
